@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ReduxToDo/static/css/main.4a1b875d.css",
+    "main.js": "/ReduxToDo/static/js/main.05d5f698.js",
+    "static/media/ok.png": "/ReduxToDo/static/media/ok.fb57861277c62f1f6c58.png",
+    "static/media/edit.png": "/ReduxToDo/static/media/edit.6626eeee8a236ce529e9.png",
+    "static/media/delete.png": "/ReduxToDo/static/media/delete.daac4de8902f2d4aa43c.png",
+    "index.html": "/ReduxToDo/index.html",
+    "main.4a1b875d.css.map": "/ReduxToDo/static/css/main.4a1b875d.css.map",
+    "main.05d5f698.js.map": "/ReduxToDo/static/js/main.05d5f698.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a1b875d.css",
+    "static/js/main.05d5f698.js"
+  ]
+}
