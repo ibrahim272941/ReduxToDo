@@ -19,8 +19,8 @@ const TodoItem = ({ completed, text, id }) => {
   };
   const handleEditTask = (e) => {
     e.preventDefault();
-    dispatch(editTodo());
-    console.log(e.target);
+    dispatch(editTodo(id, edit));
+
     setEditText(false);
   };
   const handleToggle = () => {
@@ -41,17 +41,22 @@ const TodoItem = ({ completed, text, id }) => {
                 width: "80%",
                 height: "2rem",
                 background: "orange",
+                background:
+                  "linear-gradient(to right, rgb(145, 248, 248), rgb(5, 185, 185))",
                 fontSize: "1rem",
                 border: "none",
+                fontFamily: "Gluten ,cursive",
               }}
               value={edit}
               onChange={(e) => setEdit(e.target.value)}
               type="text"
             />
-            <button type="submit">SAVE</button>
+            <button className="save-btn" type="submit">
+              SAVE
+            </button>
           </form>
         ) : (
-          <h3 className="todoText">{edit}</h3>
+          <h3 className="todoText">{text}</h3>
         )}
 
         <div className="todo-logo">

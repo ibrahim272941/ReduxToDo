@@ -1,19 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gluten:wght@200&family=Lobster&family=Pacifico&display=swap');
+
+h1 {
+    font-family: 'Gluten',
+        cursive;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
 .todo-input {
-    padding: 10px;
-    font-size: 1rem;
-    margin-right: 1rem;
+
+    font-size: 1.5rem;
+    border: none;
+    font-family: 'Gluten',
+        cursive;
+    font-weight: 900;
+    padding: 1rem;
+    outline: none;
     width: 80%;
+    border-radius: 1rem;
+    box-shadow: inset 1px 3px 2px rgb(49, 58, 58);
+    background: linear-gradient(to right, rgb(145, 248, 248), rgb(5, 185, 185));
 
 
 
 }
 
 .todo-form {
-    width: 60%;
+    width: 80%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .todo-form-wrapper {
-
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,10 +43,41 @@
 
 
 .add-button {
-    padding: 10px;
+    color: rgb(218, 207, 207);
+    cursor: pointer;
+    border: none;
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    background: linear-gradient(to right, rgb(18, 92, 3), rgb(62, 253, 4));
+    margin-left: .6rem;
+    border-radius: .6rem;
     font-size: 1rem;
-    background-color: green;
-    color: white;
+    padding: 1rem;
+    font-weight: 700;
+    font-family: 'Gluten',
+        cursive;
+    box-shadow: 1px 1px 1px 1px rgb(49, 58, 58);
+}
+
+.save-btn {
+    color: rgb(218, 207, 207);
+    cursor: pointer;
+    border: none;
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    background: linear-gradient(to right, rgb(18, 92, 3), rgb(62, 253, 4));
+    margin-left: .6rem;
+    border-radius: .6rem;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 700;
+    font-family: 'Gluten',
+        cursive;
+    box-shadow: 1px 1px 1px 1px rgb(49, 58, 58);
 }
 
 .ok-logo {
@@ -39,27 +91,37 @@
     max-width: 25rem;
     max-height: 100%;
     word-wrap: break-word;
+    font-family: 'Gluten',
+        cursive;
 
 
 }
 
 .todo-list {
-
-    align-items: center;
-
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 10px;
+    padding: 1rem;
+    cursor: pointer;
+    max-width: 70%;
+    margin: .6rem 0;
+    flex: 1 1 0%;
     border-radius: 1rem;
-    overflow: auto;
+    outline: none;
+
+    font-family: 'Gluten',
+        cursive;
+    font-weight: 800;
+    font-size: 1rem;
+    box-shadow: 1px 3px 2px rgb(49, 58, 58);
+    background: linear-gradient(to right, rgb(145, 248, 248), rgb(5, 185, 185));
+    resize: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
 .todo-logo {
 
-    border: 3px solid red;
+
     display: flex;
     justify-content: flex-end;
 }
@@ -82,11 +144,22 @@
 }
 
 .clear-button {
-    padding: 10px;
+    color: rgb(218, 207, 207);
+    cursor: pointer;
+    border: none;
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    background: linear-gradient(to right, rgb(92, 13, 3), rgb(252, 3, 3));
+
+    border-radius: .6rem;
     font-size: 1rem;
-    background-color: red;
-    color: white;
-    border-radius: 5px;
+    padding: 1rem;
+    font-weight: 700;
+    font-family: 'Gluten',
+        cursive;
+    box-shadow: 1px 1px 1px 1px rgb(49, 58, 58);
 }
 
 .logo {

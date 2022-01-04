@@ -31,10 +31,10 @@ export const clearAllTodo = () => {
   };
 };
 
-export const editTodo = (payload, id) => {
+export const editTodo = (id, payload) => {
   return {
     type: EDIT_TODO,
-    payload: payload,
     id: id,
+    payload: payload,
   };
 };
