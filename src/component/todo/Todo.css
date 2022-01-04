@@ -1,0 +1,79 @@
+.todo-input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 1rem;
+    width: 80%;
+
+
+
+}
+
+.todo-form {
+    width: 60%;
+}
+
+.todo-form-wrapper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.add-button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: green;
+    color: white;
+}
+
+.ok-logo {
+    width: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.todoText {
+    /* width: 75%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    align-items: center;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    background-color: burlywood;
+}
+
+.todo-list-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear-button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.delete-logo {
+    width: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
