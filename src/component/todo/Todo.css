@@ -35,27 +35,44 @@
 }
 
 .todoText {
-    /* width: 75%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    max-width: 25rem;
+    max-height: 100%;
+    word-wrap: break-word;
+
+
 }
 
 .todo-list {
+
     align-items: center;
+
     width: 70%;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     margin: 10px;
-    background-color: burlywood;
+    border-radius: 1rem;
+    overflow: auto;
+
 }
+
+.todo-logo {
+
+    border: 3px solid red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 
 .todo-list-wrapper {
     width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .clear-wrapper {
@@ -72,8 +89,8 @@
     border-radius: 5px;
 }
 
-.delete-logo {
-    width: 40px;
-    margin: 10px;
+.logo {
+    width: 1.8rem;
+    margin-left: .5rem;
     cursor: pointer;
 }

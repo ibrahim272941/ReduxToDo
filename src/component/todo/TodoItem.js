@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import okLogo from "../../assets/ok.png";
 import deleteLogo from "../../assets/delete.png";
+import editLogo from "../../assets/edit.png";
 import { useDispatch } from "react-redux";
-import { deleteTodo, toggleTodo } from "../../redux/actions/todoActions";
+import {
+  deleteTodo,
+  toggleTodo,
+  editTodo,
+} from "../../redux/actions/todoActions";
 
 const TodoItem = ({ completed, text, id }) => {
+  const [edit, setEdit] = useState(text);
+  const [editText, setEditText] = useState(false);
   const dispatch = useDispatch();
 
   const handleDeleteTask = () => {
     dispatch(deleteTodo(id));
+  };
+  const handleEditTask = (e) => {
+    e.preventDefault();
+    dispatch(editTodo());
+    console.log(e.target);
+    setEditText(false);
   };
   const handleToggle = () => {
     dispatch(toggleTodo(id));
@@ -21,13 +34,32 @@ const TodoItem = ({ completed, text, id }) => {
   return (
     <div className="todo-list-wrapper">
       <div style={styled} className="todo-list">
-        <h2 className="todoText">{text}</h2>
-        <div>
+        {editText ? (
+          <form style={{ width: "100%" }} onSubmit={handleEditTask}>
+            <input
+              style={{
+                width: "80%",
+                height: "2rem",
+                background: "orange",
+                fontSize: "1rem",
+                border: "none",
+              }}
+              value={edit}
+              onChange={(e) => setEdit(e.target.value)}
+              type="text"
+            />
+            <button type="submit">SAVE</button>
+          </form>
+        ) : (
+          <h3 className="todoText">{edit}</h3>
+        )}
+
+        <div className="todo-logo">
           <span>
             <img
               onClick={handleToggle}
               src={okLogo}
-              className="ok-logo"
+              className="logo"
               alt="ok logo"
             />
           </span>
@@ -35,7 +67,15 @@ const TodoItem = ({ completed, text, id }) => {
             <img
               onClick={handleDeleteTask}
               src={deleteLogo}
-              className="delete-logo"
+              className="logo"
+              alt="delete logo"
+            />
+          </span>
+          <span>
+            <img
+              onClick={() => setEditText(true)}
+              src={editLogo}
+              className="logo"
               alt="delete logo"
             />
           </span>
